@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(img/1000939.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.conteudo {
+    width: 527px;
+    height: 650px;
+    background-color: #4896c4;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #25387e;
+    padding: 20px;
+}
+
+.header h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-indent: 1px;
+
+    color: #ffffff;
+}
+
+.form {
+    padding: 20px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    width: 314px;
+    height: 52px;
+    border: 2px solid #072c81;
+    border-radius: 7px;
+    display: block;
+
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-control small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.conteudo button {
+    background-color: #f1bd99;
+    border: 2px solid #b45590;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.form-control.sucess input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: #e74c3c;
+}
