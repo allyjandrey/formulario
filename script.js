@@ -18,6 +18,10 @@ function checarInput() {
 
     if (usernameValue == "") {
         setError(username, "O nome de usuário é obrigatório");
+    } else if(usernameValue.length < 3) {
+        setError(username, "O username deve ter mais do que 3 caracteres")
+    } else if(usernameValue.length > 25){
+        setError(username, "O username deve ter menos do que 25 caracteres")
     } else {
         setSucess(username);
     }
