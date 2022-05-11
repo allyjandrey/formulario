@@ -1,4 +1,4 @@
-![formulario](https://user-images.githubusercontent.com/100244773/167746593-2fac6cb6-022d-49c0-80f6-f0a122e4f1e1.png)
+![formulario](https://user-images.githubusercontent.com/100244773/167914164-507b3a29-0af7-4290-93b2-5e14fb9303bb.png)
 
 # formulario
 
