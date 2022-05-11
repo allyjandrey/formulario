@@ -112,6 +112,16 @@ body {
     line-height: 22px;
 }
 
+input:focus {
+    background: #f1bd99;
+    border: 2px solid #b45590
+}
+
+button:hover {
+    background: #019e9e;
+    border: 2px solid #072c81;
+}
+
 .form-control.sucess input {
     border-color: #2ecc71;
 }
