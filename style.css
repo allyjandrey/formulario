@@ -99,7 +99,7 @@ body {
 .conteudo button {
     background-color: #f1bd99;
     border: 2px solid #b45590;
-    color: #fff;
+    color: rgb(125, 3, 3);
     font-size: 14px;
     width: 100%;
     border-radius: 10px;
@@ -114,12 +114,13 @@ body {
 
 input:focus {
     background: #f1bd99;
-    border: 2px solid #b45590
+    border: 2px solid #b45590;
 }
 
 button:hover {
     background: #019e9e;
     border: 2px solid #072c81;
+    color: #ffffff;
 }
 
 .form-control.sucess input {
