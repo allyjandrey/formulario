@@ -4,11 +4,15 @@ const email = document.getElementById("email");
 const senha = document.getElementById("senha");
 const confsenha = document.getElementById("confsenha");
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
+//Impedir que o formulário resete ao clicar no submit
+
+form.addEventListener("submit", (i) => {
+    i.preventDefault();
 
     checarInput();
 });
+
+//Checar informações colocadas nos inputs
 
 function checarInput() {
     const usernameValue = username.value;
@@ -49,17 +53,9 @@ function checarInput() {
     } else {
         setSucess(confsenha);
     }
-
-    const formControl = form.querySelectorAll('form-control')
-
-    const formValido = [...formControl].every(formControl => {
-        return (formControl.className == "form-control sucess");
-    });
-
-    if (formValido) {
-        console.log("O formulário está válido");
-    }
 }
+
+//Função de setar erro
 
 function setError(input, mensagem) {
     const formControl = input.parentElement;
@@ -70,11 +66,15 @@ function setError(input, mensagem) {
     formControl.className = "form-control error";
 }
 
+//Função de setar sucesso
+
 function setSucess(input) {
     const formControl = input.parentElement;
 
     formControl.className = "form-control sucess";
 }
+
+//Checar informações colocadas no e-mail
 
 function checarEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
