@@ -123,6 +123,8 @@ button:hover {
     color: #ffffff;
 }
 
+/*Estilo de sucesso e de erro*/
+
 .form-control.sucess input {
     border-color: #2fd373;
 }
@@ -134,4 +136,8 @@ button:hover {
 .form-control.error small {
     visibility: visible;
     color: #c02f1f;
+}
+
+.form-control.error button {
+    visibility: hidden;
 }
