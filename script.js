@@ -60,6 +60,7 @@ function checarInput() {
 function setarErro(input, mensagem) {
     const controlarForm = input.parentElement;
     const small = controlarForm.querySelector('small');
+    
 
     small.innerText = mensagem;
 
